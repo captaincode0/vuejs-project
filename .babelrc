@@ -1,0 +1,9 @@
+{
+	"presets": ["@babel/preset-flow"],
+	"plugins": [
+		"@babel/plugin-transform-runtime",
+		"@babel/plugin-transform-flow-comments",
+		"@babel/plugin-syntax-flow",
+		"@babel/plugin-transform-flow-strip-types"
+	]
+}

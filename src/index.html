@@ -2,11 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>VueJS Intro</title>
+    <title>VueJS GameList Application</title>
   </head>
   <body>
-		<div id="app"></div> 
-    <script src="../node_modules/vue/dist/vue.js"><script>
-    <script src="app.js">
+		<div id="app">
+			<div class="gamelist-app">
+				<h1>GameList Application</h1>
+        <game-header></game-header>
+        <game-adder 
+          @new="addNewGame">
+        </game-adder>
+        <game-list 
+          :games="games"> 
+        </game-list>
+			</div>	
+		</div>
+
+    	<script src="dist/js/app.js"></script>
   </body>
 </html>

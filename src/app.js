@@ -1,3 +1,17 @@
+/**
+ * PROJECT DEPENDENCIES
+ */
+const Vue = require("vue");
+
+/**
+ * BUILT-IN DEPENDENCIES
+ */
+import "./app.scss";
+
+const app = new Vue({
+	el: "#app"
+});
+
 const app = new Vue({
 	el: "#app",
 	template: [
